@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CCD1D9"
+    tools:context=".RefundStatus">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView1"
+        android:text="Refund Status"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dim_60"
+        android:textSize="@dimen/dim_30"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dim_24"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="Booking Id:"
+            android:drawableLeft="@drawable/baseline_edit_square_24"
+            android:paddingBottom="@dimen/dim_12"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="Email NO:"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:paddingBottom="@dimen/dim_12"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="Mobile No:"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:paddingBottom="@dimen/dim_12"
+            android:drawablePadding="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Gateway"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+           android:textColor="@color/black"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/baseline_currency_exchange_24"
+            android:drawablePadding="20dp"
+            android:paddingBottom="@dimen/dim_12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dim_32"
+            android:background="#30ffffff"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="PayPal" />
+
+            <CheckBox
+                android:id="@+id/checkbox_stripe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Gpay" />
+
+            <CheckBox
+                android:id="@+id/checkbox_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Others" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/AdmLogin"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="#131313"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

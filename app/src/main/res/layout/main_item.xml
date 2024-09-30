@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:elevation="@dimen/dim_6"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_80"
+            android:layout_centerVertical="true"
+            android:id="@+id/img1"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="@dimen/dim_2"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text="Passenger Name"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:text="Passenger Email"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

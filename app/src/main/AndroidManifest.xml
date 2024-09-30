@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Online_Bus_Resirvation_System"
+        tools:targetApi="31">
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaybleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminsignup"
+            android:exported="false" />
+        <activity
+            android:name=".deletebus"
+            android:exported="false" />
+        <activity
+            android:name=".updatebus"
+            android:exported="false" />
+        <activity
+            android:name=".addbus"
+            android:exported="false" />
+        <activity
+            android:name=".adminpanel"
+            android:exported="false" />
+        <activity
+            android:name=".adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".Front_Page"
+            android:exported="false" />
+        <activity
+            android:name=".SELECTSEAT"
+            android:exported="false" />
+        <activity
+            android:name=".FINDBUS"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusPass"
+            android:exported="false" />
+        <activity
+            android:name=".CurrentBooking"
+            android:exported="false" />
+        <activity
+            android:name=".TimeTable"
+            android:exported="false" />
+        <activity
+            android:name=".Virtual"
+            android:exported="false" />
+        <activity
+            android:name=".Review"
+            android:exported="false" />
+        <activity
+            android:name=".RefundStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Track"
+            android:exported="false" />
+        <activity
+            android:name=".Status"
+            android:exported="false" />
+        <activity
+            android:name=".Cancellation"
+            android:exported="false" />
+        <activity
+            android:name=".Booking"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LOGINBOTH"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

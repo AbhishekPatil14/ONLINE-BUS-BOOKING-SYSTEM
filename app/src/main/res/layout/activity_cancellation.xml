@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCD1D9"
+    android:orientation="vertical"
+    tools:context=".Cancellation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView1"
+        android:text="Cancel Ticket"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dim_60"
+        android:textSize="@dimen/dim_30"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dim_24"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="PNR NO:"
+            android:drawableLeft="@drawable/baseline_control_point_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:hint="EMAIL ID:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp" />
+
+        <EditText
+            android:hint="MOBILE NO:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="20dp" />
+
+        <EditText
+            android:hint="PASSWORD:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:text="SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="#131313"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

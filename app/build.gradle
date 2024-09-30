@@ -1,0 +1,71 @@
+// Apply plugins to the project
+plugins {
+    id 'com.android.application'  // Applies the Android Application plugin for building Android apps
+    id 'com.google.gms.google-services'  // Applies the Google Services plugin for Firebase and other Google services
+}
+
+// Android configuration
+android {
+    namespace 'com.abpatil1.online_bus_resirvation_system'
+    compileSdk 34  // Use the latest stable SDK version.
+
+    defaultConfig {
+        applicationId "com.abpatil1.online_bus_resirvation_system"
+        minSdk 23  // Minimum Android API level required to run the app.
+        targetSdk 33  // API level the app targets.
+        versionCode 1  // Increment this for every release.
+        versionName "1.0"  // Version name displayed to users.
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false  // Enable code shrinking for release builds.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // AndroidX
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity:1.9.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.fragment:fragment:1.5.5'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Firebase BOM (Bill of Materials) for Firebase services
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation 'com.google.firebase:firebase-appcheck'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-database'
+
+    // Google Material Components
+    implementation 'com.google.android.material:material:1.11.0'
+
+    // Glide for image loading and caching (using the latest stable version)
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+    // Other libraries
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:7.1.1'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// Apply the Google Services plugin for Firebase
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'

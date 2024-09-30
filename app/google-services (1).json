@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302776170674",
+    "project_id": "online-bus-resirvation-system",
+    "storage_bucket": "online-bus-resirvation-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302776170674:android:7065f69f6625f02ef9f1ab",
+        "android_client_info": {
+          "package_name": "com.abpatil1.online_bus_resirvation_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBID1tc9nKAGTKJQO_-EPnijabJ2OdieAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

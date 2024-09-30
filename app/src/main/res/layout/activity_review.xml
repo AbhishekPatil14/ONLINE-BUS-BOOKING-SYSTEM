@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCD1D9"
+    android:orientation="vertical"
+    tools:context=".Review">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView1"
+        android:text="Feedbacks"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dim_60"
+        android:textSize="@dimen/dim_30"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dim_36"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:minLines="5"
+            android:maxLines="10"
+            android:hint="Enter your feedback or suggestions"
+            android:scrollbars="vertical"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="Enter Email ID:"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30ffffff"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:paddingTop="@dimen/dim_26"
+            android:padding="20dp"
+            android:hint="Enter Mobile Number:"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="20dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:text="SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#131313"
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
